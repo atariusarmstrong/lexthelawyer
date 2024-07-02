@@ -105,6 +105,13 @@
             width: auto;
             position: relative;
         }
+        /* @media only screen and (max-width: 600px) {
+            .hero-image {
+                height: auto;
+                position: fixed;
+                background-position: 0;
+            }
+        } */
         .i-am {
             font-size: 18px;
             color:#F2ECD8;
@@ -167,7 +174,7 @@
         .services {
             flex-direction: column;
             gap: 25px;
-            width: 715px;
+            width: fit-content;
             margin: auto;
         }
         .appointment-content {
@@ -213,6 +220,38 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                width: 100vw;
+                position: absolute;
+            }
+
+            .i-am {
+                right: 98px
+            }
+            .hero-logo {
+                right: unset;
+                display: grid;
+                width: 100%;
+            }
+            .hero-logo img {
+                margin: 0 auto;
+            }
+            .hero-text {
+                right: unset;
+                width: 318px;
+            }
+            .inner-content {
+                margin-top: 168px;
+            }
+            .link {
+                width: 295px;
+            }
+            /* .services {
+                width: fit-content;
+            } */
         }
 
     </style>
@@ -267,7 +306,7 @@
                     <div class="service-block">
                         <div class="service-title">
                             <img src="/assets/hammer-icon.svg" alt="hammer icon" />
-                            <h3>Service 1</h3>
+                            <h3>Litigation</h3>
                         </div>
     
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
@@ -275,7 +314,7 @@
                     <div class="service-block">
                         <div class="service-title">
                             <img src="/assets/alms-icon.svg" alt="alms" />
-                            <h3>Service 2</h3>
+                            <h3>Family Services</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
                     </div>
@@ -292,15 +331,14 @@
             </div>
         </div>
         
-    
-        <footer class="footer">
-            <!-- <div class="footer-links"> -->
-                <a>601-987-9180</a> -
-                <a>arayford@frascognalaw.com</a> -
-                <a href="https://frascognalaw.com">frascognalaw.com</a>
-            <!-- </div> -->
-        </footer>
     </div>
+    <footer class="footer">
+        <!-- <div class="footer-links"> -->
+            <a>601-987-9180</a> -
+            <a>arayford@frascognalaw.com</a> -
+            <a href="https://frascognalaw.com">frascognalaw.com</a>
+        <!-- </div> -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
